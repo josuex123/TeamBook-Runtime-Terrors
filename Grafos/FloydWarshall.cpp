@@ -6,7 +6,7 @@ vector<vector<ll>> floydWarshall(vector<vector<pair<ll,ll>>> G, int n){
     }
     for(int u = 1; u <= n; ++u){
         for(auto to : G[u]){
-            ll v = to.F, w = to.S;
+            ll v = to.first, w = to.second;
             dis[u][v] = min(dis[u][v],w);
             dis[v][u] = min(dis[v][u],w);
         }

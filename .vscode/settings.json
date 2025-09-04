@@ -18,6 +18,8 @@
         "unordered_set": "cpp",
         "format": "cpp",
         "generator": "cpp",
-        "text_encoding": "cpp"
+        "text_encoding": "cpp",
+        "iostream": "cpp",
+        "chrono": "cpp"
     }
 }
