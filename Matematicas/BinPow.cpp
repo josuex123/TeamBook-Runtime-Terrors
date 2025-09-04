@@ -9,3 +9,6 @@ ll binpow(ll a, ll b, ll m) {
     }
     return res;
 }
+ll modInverse(ll a, ll p) {
+    return binpow(a, p - 2, p);
+}
