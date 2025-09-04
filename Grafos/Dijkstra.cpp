@@ -7,12 +7,12 @@ vector<ll> dijkstra(vector<vector<pair<ll,ll>>> G, int n, int s){
     while(!pq.empty()){
         pair<ll,ll> menor = pq.top();
         pq.pop();
-        int w = menor.F;
-        int nodo = menor.S;
+        int w = menor.first;
+        int nodo = menor.second;
         if(dis[nodo] < w) continue;
         for( auto to : G[nodo]){
-            int v = to.F;
-            int cost = to.S;
+            int v = to.first;
+            int cost = to.second;
             if(dis[nodo]+cost < dis[v]){
                 dis[v] = dis[nodo] + cost;
                 pq.push({dis[v],v});
