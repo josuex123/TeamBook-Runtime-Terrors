@@ -11,15 +11,17 @@
 #define debug2(x) cout<<":"<<x<<endl;
 #define vii vector<ii>
 #define all(x) x.begin(),x.end()
+#define allr(x) x.rbegin(),x.rend()
+#define sz(x) (int)x.size()
 #define double long double
 #define forn(i,n) for(int i = 0; i < n; i++)
 #define fore(i, b, e) for(int i = b; i < e; i++)
 #define foree(i, b, e) for(int i = b; i <= e; i++)
 #define forg(i, b, e, m) for(int i = b; i < e; i+=m)
 using namespace std;
-const int INF = 1e9 + 7;
-const int tam = 1e6 + 5;
-int dp[tam];
+// const int INF = 1e9 + 7;
+// const int tam = 1e6 + 5;
+// int dp[tam];
 using ll = long long;
 
 
