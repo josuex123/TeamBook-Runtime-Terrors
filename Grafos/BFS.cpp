@@ -41,3 +41,28 @@ vector<int> bfs(vector<vector<int>>& g , int u,int t) {
     reverse(all(path));
     return path;
 }
+
+int ans = INF;
+
+
+void bfs(vector<vector<int>>& g , int u) {
+    vector<int> dis(g.size(), -1); 
+    vector<int> parents(g.size(),-1);
+    queue<int> q;
+    dis[u] = 0;
+    q.push(u);
+    while (!q.empty()) {
+        int node = q.front();
+        q.pop();
+        for (int v : g[node]) {
+            if (dis[v] == -1) { 
+                dis[v] = dis[node] + 1;
+                parents[v] = node;
+                q.push(v);
+            }else if(parents[node] != v){
+                int len = dis[node] + dis[v] + 1;
+                if(len < ans)ans = len;
+            }
+        }
+    }
+}
