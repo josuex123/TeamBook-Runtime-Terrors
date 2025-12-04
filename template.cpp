@@ -6,6 +6,8 @@
 #define F first
 #define S second
 #define vi vector<int>
+#define vc vector<char>
+#define vs vector<string>
 #define ii pair<int,int>
 #define debug cout<<"entro"<<endl;
 #define debug2(x) cout<<":"<<x<<endl;
@@ -20,6 +22,7 @@
 #define forg(i, b, e, m) for(int i = b; i < e; i+=m)
 using namespace std;
 // const int INF = 1e9 + 7;
+// const int MOD = 1e9 + 7;
 // const int tam = 1e6 + 5;
 // int dp[tam];
 using ll = long long;
@@ -32,14 +35,6 @@ void solve(){
 
 signed main(){
    FIO
-   // USACO
-   // ifstream fin("reststops.in");
-   // ofstream fout("reststops.out");
-
-   // UVA
-   // freopen("censor.in", "r", stdin);
-    // freopen("censor.out", "w", stdout);
-
    // int t;
    // cin >> t;
    // while(t--)
